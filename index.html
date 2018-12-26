@@ -23,11 +23,20 @@ main {
     align-items: center;
     flex-direction: column;
 }
+main > a {
+    border-radius: 50%;
+    border: 1px solid #ebebeb;
+    box-shadow: 2px 4px 4px rgba(0,0,0,.4);
+    display: flex;
+    align-items: center;
+
+}
 main > a > img {
     border-radius: 50%;
     width: 128px;
-    border: 1px solid #ebebeb;
-    box-shadow: 0 4px 4px rgba(0,0,0,.4);
+}
+main > a:hover {
+    box-shadow: 2px 4px 4px rgba(0,0,0,.6);
 }
 #menu {
     display: inline-flex;
@@ -44,7 +53,10 @@ main > a > img {
     margin: 8px;
     text-decoration: none;
     background-color: #cccccc;
-    box-shadow: 0 4px 4px rgba(0,0,0,.4);
+    box-shadow: 2px 4px 4px rgba(0,0,0,.4);
+}
+#menu > a:hover {
+    box-shadow: 2px 4px 4px rgba(0,0,0,.6);
 }
 #menu > * > img {
     width: 48px;
@@ -72,6 +84,12 @@ main > a > img {
             </a>
             <a href="https://chat.koumakan.cc" title="chat">
                 <img src="/chat.svg" alt="chat">
+            </a>
+            <a href="https://github.com/RemiliaForever" title="GitHub">
+                <img src="/github.svg" alt="GitHub">
+            </a>
+            <a href="mailto:remilia@koumakan.cc" title="Email">
+                <img src="/mail.svg" alt="Email">
             </a>
         </div>
     </body>
